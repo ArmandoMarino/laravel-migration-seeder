@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{env('APP_NAME')}} | @yield('title') </title>
 
+    {{-- CDN  --}}
     @yield('cdns')
+
     {{-- Rendering di app Vue --}}
     @vite('resources/js/app.js')
 </head>
+
 <body>
+    {{-- HEADER --}}
     @include('includes.header')
    
 
-
+    {{-- CONTENT --}}
         <main class="container">
             @yield('content')
         </main>
@@ -22,7 +26,7 @@
 
         
    
-    
+    {{-- SCRIPTS --}}
     @yield('scripts')
 
 </body>

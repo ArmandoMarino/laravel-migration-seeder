@@ -5,8 +5,9 @@
 
 {{-- HTML --}}
 @section('content')
-<h1>Binary 9 3/4</h1>
 <div id="content-movies" class="my-2">
+<h1>Trains Info :</h1>
+
     <div class="row g-4">
         @forelse ($trains as $train)
             @include('includes.trains.card')

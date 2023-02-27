@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $movies = Train::all();
-        return view('home', compact('home'));
+        $trains = Train::all();
+        return view('home', compact('trains'));
     }
 }

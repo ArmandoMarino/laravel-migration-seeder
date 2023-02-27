@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'MOVIES')
+@section('title', 'TRAINS')
 
 
 {{-- HTML --}}

@@ -1,6 +1,6 @@
 @if (isset($train))
 <div class="col-12 col-md-6 col-lg-3">
-    <div class="card p-3 text-center">
+    <div class="my-card p-3 text-center">
         {{-- <figure><img class="img-fluid" src="{{ $train->poster }}" alt=""></figure> --}}
         <h5>Compagnia : {{ $train->company }}</h5>
         <span> Stazione di partenza : {{ $train->dep_station }}</span>

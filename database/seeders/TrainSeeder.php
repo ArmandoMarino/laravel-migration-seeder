@@ -23,8 +23,8 @@ class TrainSeeder extends Seeder
             $train->arr_station = $faker->city();
             $train->dep_time = $faker->dateTime();
             $train->arr_time = $faker->dateTime();
-            $train->code_train = $faker->buildingNumber();
-            $train->carriage_num = $faker->buildingNumber();
+            $train->code_train = $faker->numberBetween(0, 255);
+            $train->carriage_num = $faker->numberBetween(0, 100);
             $train->in_time = $faker->boolean();
             $train->is_deleted = $faker->boolean();
 
